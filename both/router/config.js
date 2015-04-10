@@ -9,6 +9,6 @@ FlowRouter.notfound = {
 
     },
     action: function() {
-    	console.log("Not found");
+  		FlowLayout.render("notFound");
     }
 };
