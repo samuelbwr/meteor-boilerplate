@@ -5,9 +5,14 @@
     </div>
 
     <ul class="list-group">
-      {{#each items}}
-        <li class="list-group-item">{{ name }} <span class="label label-default">{{ rating }}</span></li>
-      {{/each}}
+      {{#if isSubReady "myItems"}}
+        {{myItems}}
+        {{#each myItems}}
+          <li class="list-group-item">{{ name }} <span class="label label-default">{{ rating }}</span></li>
+        {{/each}}
+      {{else}}
+        {{> loading}}
+      {{/if}}
     </ul>
 
   </div>
