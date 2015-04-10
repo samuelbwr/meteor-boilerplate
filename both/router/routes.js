@@ -1,18 +1,5 @@
-// Router.route('/', {
-//   name: 'home'
-// });
-
-// Router.route('/dashboard', {
-//   name: 'dashboard'
-// });
-
-// Router.plugin('ensureSignedIn', {
-//   only: ['dashboard']
-// });
-
 FlowRouter.route('/home', {
     subscriptions: function(params) {
-     
         
     },
     action: function(params) {
@@ -24,18 +11,19 @@ FlowRouter.route('/home', {
 FlowRouter.route('/dashboard', {
     subscriptions: function(params) {
         console.log("subscribe and register this subscription as 'myItems'");
-        this.register('myItems', Meteor.subscribe('items'));//, params.postId
+        this.register('myItems', Meteor.subscribe('items'));
     },
     action: function(params) {
-        console.log("Yeah! We are on the dashboard:");
+        console.log("Yeah! We are on the dashboard");
         FlowLayout.render("appLayout", {area: "dashboard"});
     }
 });
 
 FlowRouter.route('/dashboard/:postId', {
+    middlewares: [AccountsTemplates.ensureSignedIn],
     subscriptions: function(params) {
         console.log("subscribe and register this subscription as 'myItems'");
-        this.register('myItems', Meteor.subscribe('items'), params.postId);
+        this.register('myItems', Meteor.subscribe('items',params.postId));
     },
     action: function(params) {
         console.log("Yeah! We are on the post:", params.postId);

@@ -15,10 +15,6 @@
 // });
 
 Meteor.publish("items", function() {
-  // if(Items) 
-    return Items.find({});
-  // else{
-  //   this.ready();
-  // }
+  return Items.find({});
 });
 

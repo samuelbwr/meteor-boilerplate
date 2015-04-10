@@ -6,9 +6,10 @@
 
     <ul class="list-group">
       {{#if isSubReady "myItems"}}
-        {{myItems}}
-        {{#each myItems}}
-          <li class="list-group-item">{{ name }} <span class="label label-default">{{ rating }}</span></li>
+        
+        {{#each items}}
+          <li class="list-group-item">{{ name }} <span class="label label-default">{{ rating }}</span><a href="{{ urlFor  'dashboard/:postId' postId=_id }}" class="">Link
+          </a></li>
         {{/each}}
       {{else}}
         {{> loading}}
