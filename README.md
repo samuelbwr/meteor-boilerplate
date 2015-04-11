@@ -1,6 +1,6 @@
 # meteor-boilerplate
 
-A starting point for MeteorJS applications. Includes iron-router, Bootstrap 3, Font Awesome, LESS and more.
+A starting point for MeteorJS applications. Includes flow-router, Bootstrap 3, Font Awesome, LESS and more.
 
 * [Included Packages](#included-packages)
 * [Installation](#installation)
@@ -17,8 +17,8 @@ A starting point for MeteorJS applications. Includes iron-router, Bootstrap 3, F
   * [matb33:collection-hooks](https://github.com/matb33/meteor-collection-hooks)
   * [reywood:publish-composite](https://github.com/englue/meteor-publish-composite)
 * Router:
-  * [iron:router](https://github.com/EventedMind/iron-router)
-  * [zimme:iron-router-active](https://github.com/zimme/meteor-iron-router-active)
+  * [meteorhacks:flow-router](https://github.com/meteorhacks/flow-router/)
+  * [meteorhacks:flow-layout](https://github.com/meteorhacks/flow-layout/) 
   * [yasinuslu:blaze-meta](https://github.com/yasinuslu/blaze-meta)
 * Authentication
   * [splendido:accounts-templates-bootstrap](https://github.com/splendido/accounts-templates-bootstrap)
@@ -39,13 +39,15 @@ A starting point for MeteorJS applications. Includes iron-router, Bootstrap 3, F
 
 1. Clone this repo to `<yourapp>`
 
-  `git clone https://github.com/Differential/meteor-boilerplate.git <yourapp>`
+  `git clone https://github.com/aladine/meteor-boilerplate.git <yourapp>`
 
 2. Remove `.git`
 
   `cd <yourapp> && rm -rf .git`
 
-3. Start coding!
+3. Read section **AccountsTemplate issue with Flow-Router **  
+
+4. Start coding!
 
 ## <a name="file-structure"></a> File Structure
 
@@ -131,4 +133,18 @@ Meteor.startup(function() {
 
 });
 
+```
+
+##Fix AccountsTemplate issue with Flow-Router
+Flow-Router integration is still working in progress. Please checkout this branch so you can use in your project
+
+```
+> cd your/project/path
+> mkdir packages && cd packages
+> git clone https://github.com/meteor-useraccounts/core.git
+> cd core
+> git checkout flow-router-integration
+> cd ..
+> meteor add useraccounts:<something>
+> meteor
 ```
