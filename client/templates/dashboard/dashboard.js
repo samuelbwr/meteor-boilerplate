@@ -1,6 +1,6 @@
-Template.dashboard.rendered = function() {
+Template.dashboard.onRendered(function() {
 
-};
+});
 
 Template.dashboard.helpers({
 	items: function(){
