@@ -20,6 +20,5 @@ yasinuslu:blaze-meta
 aldeed:collection2
 aldeed:autoform
 arillo:flow-router-helpers
-meteorhacks:flow-layout
-meteorhacks:flow-router
 useraccounts:bootstrap
+useraccounts:flow-routing
