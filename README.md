@@ -18,7 +18,8 @@ A starting point for MeteorJS applications. Includes flow-router, Bootstrap 3, F
   * [reywood:publish-composite](https://github.com/englue/meteor-publish-composite)
 * Router:
   * [kadira:flow-router](https://github.com/kadira/flow-router/)
-  * [kadira:blaze-layout](https://github.com/kadira/blaze-layout/) 
+  * [kadira:blaze-layout](https://github.com/kadira/blaze-layout/)
+  * [meteorhacks:fast-render](https://github.com/kadirahq/fast-render) 
   * [yasinuslu:blaze-meta](https://github.com/yasinuslu/blaze-meta)
 * Authentication
   * [splendido:accounts-templates-bootstrap](https://github.com/splendido/accounts-templates-bootstrap)
