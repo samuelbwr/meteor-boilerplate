@@ -15,7 +15,6 @@ matb33:collection-hooks
 dburles:factory
 anti:fake
 cunneen:mailgun
-yasinuslu:blaze-meta
 aldeed:collection2
 aldeed:autoform
 arillo:flow-router-helpers
@@ -36,3 +35,4 @@ ejson
 spacebars
 check
 meteorhacks:fast-render
+kadira:dochead

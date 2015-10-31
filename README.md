@@ -20,7 +20,7 @@ A starting point for MeteorJS applications. Includes flow-router, Bootstrap 3, F
   * [kadira:flow-router](https://github.com/kadira/flow-router/)
   * [kadira:blaze-layout](https://github.com/kadira/blaze-layout/)
   * [meteorhacks:fast-render](https://github.com/kadirahq/fast-render) 
-  * [yasinuslu:blaze-meta](https://github.com/yasinuslu/blaze-meta)
+  * [kadira:dochead](https://github.com/kadirahq/meteor-dochead)
 * Authentication
   * [splendido:accounts-templates-bootstrap](https://github.com/splendido/accounts-templates-bootstrap)
   * [alanning:roles](https://github.com/alanning/meteor-roles)
